@@ -24,7 +24,7 @@ export default function Appbar() {
               <div className="p-5">
           
           <div className="flex gap-2 justify-center">
-            <Link href="#" className="bg-black rounded-full p-2 hover:opacity-80">
+            <Link href="https://x.com/notcodesid" className="bg-black rounded-full p-2 hover:opacity-80">
               <Image
                 src={XLogo}
                 alt="Profile"
@@ -35,11 +35,11 @@ export default function Appbar() {
               />
               <span className="sr-only">X (formerly Twitter)</span>
             </Link>
-            <Link href="#" className="bg-black rounded-full p-2 hover:opacity-80">
+            <Link href="https://github.com/notcodesid" className="bg-black rounded-full p-2 hover:opacity-80">
               <Github className="h-5 w-5 text-white" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="#" className="bg-black rounded-full p-2 hover:opacity-80">
+            <Link href="https://www.linkedin.com/in/sidharthh-pandro/" className="bg-black rounded-full p-2 hover:opacity-80">
               <Linkedin className="h-5 w-5 text-white" />
               <span className="sr-only">LinkedIn</span>
             </Link>
