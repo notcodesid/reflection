@@ -19,7 +19,7 @@ export default function LandingPage() {
             alt="Profile"
             width={128}
             height={128}
-            className="mx-auto rounded-full"
+            className="mx-auto rounded"
             priority
           />
         </div>
