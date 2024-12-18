@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Appbar from "./components/appbar"
-import BlogSection from "./components/blog-section"
+import Appbar from "../components/appbar"
+import BlogSection from "../components/blog-section"
 
 
 export default function LandingPage() {

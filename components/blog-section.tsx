@@ -14,7 +14,7 @@ interface BlogPost {
 
 const samplePosts: BlogPost[] = [
   {
-    id: "1",
+    id: "a-new-beginning",
     title: "A New Beginning",
     date: "December 16, 2024",
     likes: 8,
@@ -64,7 +64,7 @@ export default function BlogSection() {
         <h2 className="text-4xl font-bold mb-8">Archive</h2>
         
         {/* Search and Categories */}
-        <div className="mb-8 space-y-6">
+        {/* <div className="mb-8 space-y-6">
           <div className="relative w-full">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
             <Input 
@@ -74,13 +74,13 @@ export default function BlogSection() {
             />
           </div>
   
-        </div>
+        </div> */}
 
         {/* Blog Posts Grid */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {samplePosts.map((post) => (
             <article key={post.id} className="group">
-              <Link href={`/posts/${post.id}`}>
+              <Link href={`blogs/${post.id}`}>
                 <div className="space-y-4">
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
