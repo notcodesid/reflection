@@ -19,7 +19,7 @@ export default function Appbar() {
                         height={32}
                         className="rounded"
                     />
-                    <span className="text-lg font-medium">Awakenings - Siddharth </span>
+                    {/* <s3pan className="text-lg font-medium">Awakenings - Siddharth </span> */}
                 </div>
             </nav>
 
@@ -34,7 +34,7 @@ export default function Appbar() {
                             alt="Profile"
                             width={20}
                             height={20}
-                            className="mx-auto rounded-full"
+                            className="mx-auto rounded-full h-5 w-5"
                             priority
                         />
                         <span className="sr-only">X (formerly Twitter)</span>

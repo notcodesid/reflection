@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Linkedin, Github } from 'lucide-react'
 import Appbar from "./components/appbar"
+import BlogSection from "./components/blog-section"
 
 
 export default function LandingPage() {
@@ -44,6 +45,8 @@ export default function LandingPage() {
         </div> */}
 
       </main>
+
+      <BlogSection />
     </div>
   )
 }
