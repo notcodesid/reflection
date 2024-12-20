@@ -1,7 +1,6 @@
 'use client'
 
 import { BlogAppBar } from '@/components/blogAppbar';
-import { Clock } from 'lucide-react'
 import { useEffect, useState, useCallback } from 'react'
 
 function TableOfContents({ sections }: { sections: { id: string; title: string }[] }) {
@@ -149,11 +148,7 @@ export default function BlogPost() {
                     <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-3">
                         The Most Silicon Valley Man Alive
                     </h1>
-                    <div className="flex items-center space-x-2">
-                        <Clock className="h-[18px] w-[18px]" />
-                        <span className="text-muted-foreground">Created at</span>
-                        <span className="text-sm">18 Dec 2024</span>
-                    </div>
+                   
                 </div>
 
                 <section className="mt-8">
