@@ -1,5 +1,6 @@
 'use client'
 
+import { BlogAppBar } from '@/components/blogAppbar';
 import { Clock } from 'lucide-react'
 import { useEffect, useState, useCallback } from 'react'
 
@@ -140,6 +141,8 @@ export default function BlogPost() {
     ]
 
     return (
+      <>
+          <BlogAppBar />
         <div className="min-h-screen bg-background px-4 py-6 md:px-6 md:py-12 lg:py-16">
             <article className="prose prose-gray dark:prose-invert mx-auto max-w-3xl">
                 <div className="space-y-2 not-prose">
@@ -258,6 +261,7 @@ export default function BlogPost() {
             </article>
             <TableOfContents sections={sections} />
         </div>
+        </>
     )
 }
 

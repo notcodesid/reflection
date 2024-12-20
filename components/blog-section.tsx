@@ -1,9 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Search } from 'lucide-react'
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
-
 interface BlogPost {
   id: string
   title: string
