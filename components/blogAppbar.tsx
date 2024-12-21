@@ -5,9 +5,30 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { toast } from "@/hooks/use-toast";
 
 export function BlogAppBar() {
   const router = useRouter();
+
+  const handleShare = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href)
+      toast({
+        title: "Link copied!",
+        description: "The URL has been copied to your clipboard.",
+        duration: 2000,
+      })
+    } catch (err) {
+      console.error(err)
+      toast({
+        title: "Failed to copy",
+        description: "Please try again",
+        variant: "destructive",
+        duration: 2000,
+      })
+    }
+  }
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-14 items-center gap-4 px-4">
@@ -56,7 +77,12 @@ export function BlogAppBar() {
             <span>Created at Dec 20, 2024</span>
           </div>
 
-          <Button variant="ghost" size="icon" className="hidden sm:inline-flex">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="hidden sm:inline-flex"
+            onClick={handleShare}
+          >
             <Share2 className="h-4 w-4" />
             <span className="sr-only">Share</span>
           </Button>
