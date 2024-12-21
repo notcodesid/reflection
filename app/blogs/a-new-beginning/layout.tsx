@@ -3,6 +3,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'A New Beginning | Awakenings',
   description: 'Exploring new horizons and fresh starts in the tech world',
+
+
+//   open graph
   openGraph: {
     title: 'A New Beginning | Awakenings',
     description: 'Exploring new horizons and fresh starts in the tech world',
@@ -19,6 +22,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'article',
   },
+  
   twitter: {
     card: 'summary_large_image',
     title: 'A New Beginning | Awakenings',
