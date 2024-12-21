@@ -41,7 +41,7 @@ export function BlogAppBar() {
           <ArrowLeft className="h-5 w-5" />
           <span className="sr-only">Back</span>
         </Button>
-        <div className="flex items-center gap-2">
+        <Link className="flex items-center gap-2" href={"/"}>
           <Image
             src="https://pbs.twimg.com/profile_images/1801972870756925440/i5Hk08rP_400x400.jpg"
             alt="Logo"
@@ -53,7 +53,7 @@ export function BlogAppBar() {
           <span className="font-semibold hidden sm:inline-block">
             Awakenings
           </span>
-        </div>
+        </Link>
 
         <div className="hidden md:flex items-center text-sm text-muted-foreground">
           <Link
@@ -80,7 +80,7 @@ export function BlogAppBar() {
           <Button 
             variant="ghost" 
             size="icon" 
-            className="hidden sm:inline-flex"
+            className="sm:inline-flex"
             onClick={handleShare}
           >
             <Share2 className="h-4 w-4" />
