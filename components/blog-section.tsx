@@ -67,11 +67,11 @@ export default function BlogSection() {
                       alt={post.title}
                       width={600}
                       height={400}
-                      className="object-contain w-full transition-transform group-hover:scale-105"
+                      className="object-contain transition-transform group-hover:scale-105"
                     />
                   </div>
 
-                  <div className="space-y-2"
+                  <div className="space-y-2">
                     <h3 className="text-xl font-semibold group-hover:text-gray-600">
                       {post.title}
                     </h3>
