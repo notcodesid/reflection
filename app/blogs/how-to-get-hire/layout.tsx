@@ -2,14 +2,12 @@ import { Toaster } from '@/components/ui/toaster'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'A New Beginning | Awakenings',
-  description: 'Exploring new horizons and fresh starts in the tech world',
-
-
+  title: 'How to get hire | Awakenings ',
+  description: 'What founders what from a developers',
 //   open graph
   openGraph: {
-    title: 'A New Beginning | Awakenings',
-    description: 'Exploring new horizons and fresh starts in the tech world',
+    title: 'How to get hire | Awakenings ',
+    description: 'What founders what from a developers',
     url: '',
     siteName: 'Awakenings',
     images: [
@@ -17,7 +15,7 @@ export const metadata: Metadata = {
         url: 'https://i.pinimg.com/736x/5a/d4/71/5ad471a2ba34058c37a640ed92db7e19.jpg',
         width: 1200,
         height: 500,
-        alt: 'A serene landscape representing new beginnings',
+        alt: 'Sam Altaman',
       },
     ],
     locale: 'en_US',
@@ -26,8 +24,8 @@ export const metadata: Metadata = {
   
   twitter: {
     card: 'summary_large_image',
-    title: 'A New Beginning | Awakenings',
-    description: 'Exploring new horizons and fresh starts in the tech world',
+    title: 'How to get hire | Awakenings ',
+    description: 'What founders what from a developers',
     images: ['https://i.pinimg.com/736x/5a/d4/71/5ad471a2ba34058c37a640ed92db7e19.jpg']
   },
 }
