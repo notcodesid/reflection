@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to get hire | Awakenings ',
     description: 'What founders what from a developers',
-    url: '',
+    url: 'https://awakenings-one.vercel.app/blogs/how-to-get-hire',
     siteName: 'Awakenings',
     images: [
       {
