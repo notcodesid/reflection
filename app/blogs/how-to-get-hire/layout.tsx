@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 //   open graph
   openGraph: {
     title: 'How to get hire | Awakenings ',
-    description: 'What founders what from a developers',
+    description: 'What founders want from a developers',
     url: 'https://awakenings-one.vercel.app/blogs/how-to-get-hire',
     siteName: 'Awakenings',
     images: [
