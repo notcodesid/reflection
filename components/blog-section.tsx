@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 interface BlogPost {
@@ -11,28 +11,12 @@ interface BlogPost {
 
 const samplePosts: BlogPost[] = [
   {
-    id: "a-new-beginning",
-    title: "The Future of AI",
-    date: "December 22, 2024",
-    likes: 20,
-    image:
-      "https://i.pinimg.com/736x/7d/c7/e4/7dc7e41d715fb091f1fefc4cd5c00c6c.jpg",
-  },
-  {
-    id: "2",
-    title: "Lessons from Failure",
-    date: "December 24, 2024",
+    id: "how-to-get-hire",
+    title: "How to get hire - Sam Altman",
+    date: "September 09, 2024",
     likes: 18,
     image:
       "https://i.pinimg.com/736x/5a/d4/71/5ad471a2ba34058c37a640ed92db7e19.jpg",
-  },
-  {
-    id: "3",
-    title: "The Power of Habit",
-    date: "December 26, 2024",
-    likes: 22,
-    image:
-      "https://i.pinimg.com/736x/94/b4/54/94b454f14c145475b78da427122b29bb.jpg",
   },
 ];
 
@@ -86,12 +70,12 @@ export default function BlogSection() {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <Link href={"/blogs"} className="flex justify-center items-center mt-5 ">
           <span className="text-lg">  Let me see all the blogs </span>
           <ArrowRight className="h-5 ml-1"/>
         </Link>
-      </div>
+      </div> */}
 
     </section>
   );

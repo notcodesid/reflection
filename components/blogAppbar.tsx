@@ -64,17 +64,17 @@ export function BlogAppBar() {
           </Link>
           <p className="mx-3">/</p>
           <Link
-            href="/foundering/episode-1"
+            href="how-to-get-hire"
             className="hover:text-foreground transition-colors truncate max-w-[300px]"
           >
-            The Most Silicon Valley...
+            How to get hire...
           </Link>
         </div>
 
         <div className="ml-auto flex items-center gap-2">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Clock className="h-4 w-4" />
-            <span>Created at Dec 20, 2024</span>
+            <span>Created at Sep 09 2023</span>
           </div>
 
           <Button 
