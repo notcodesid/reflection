@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
+
 
 import { Merriweather } from "next/font/google";
 
@@ -53,6 +55,7 @@ export default function RootLayout({
         className={`${merriweather.variable} antialiased`} // Apply the font variable correctly here
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
