@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Awakening",
     images: [
       {
-        url:"/open-graph.png", // image link
+        url:"https://i.pinimg.com/736x/5b/09/ab/5b09ab874aa7763b02f0165f77cabce9.jpg", // image link
         width: 1200,
         height: 500,
         alt: "Title with their description",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Awakenings - Siddharth",
     description:
       "Snapshots of growth, reflections, and insights for curious minds navigating life, tech, and everything in between.",
-    images: ["/open-graph.png"],
+    images: ["https://i.pinimg.com/736x/5b/09/ab/5b09ab874aa7763b02f0165f77cabce9.jpg"],
   },
 };
 
