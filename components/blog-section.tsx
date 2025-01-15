@@ -4,19 +4,21 @@ import Link from "next/link";
 interface BlogPost {
   id: string;
   title: string;
-  date: string;
-  likes: number;
   image: string;
 }
 
 const samplePosts: BlogPost[] = [
   {
-    id: "how-to-get-hire",
-    title: "How to get hire - Sam Altman",
-    date: "September 09, 2024",
-    likes: 18,
+    id: "https://ethereal-alto-f58.notion.site/Generalists-in-the-Information-Age-f2efbf0d962d4cbbad8423c8d917e7fc?pvs=4",
+    title: "Generalists in the Information Age",
     image:
-      "https://i.pinimg.com/736x/5a/d4/71/5ad471a2ba34058c37a640ed92db7e19.jpg",
+      "https://i.pinimg.com/736x/f3/fe/a6/f3fea68781554bfbd4426ee1c136066b.jpg",
+  },
+  {
+    id: "https://ethereal-alto-f58.notion.site/Serverless-Backend-179db9bb546c80f8805acc2b14228db2",
+    title: "Serverless Backend",
+    image:
+      "https://pbs.twimg.com/media/GhVz_ncaMAAButd?format=jpg&name=small",
   },
 ];
 
@@ -43,7 +45,7 @@ export default function BlogSection() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {samplePosts.map((post) => (
             <article key={post.id} className="group">
-              <Link href={`blogs/${post.id}`}>
+              <Link href={`${post.id}`}>
                 <div className="space-y-4">
                   <div className="aspect-video overflow-hidden rounded-lg">
                     <Image
