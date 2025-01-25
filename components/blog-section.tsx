@@ -20,6 +20,12 @@ const samplePosts: BlogPost[] = [
     image:
       "https://pbs.twimg.com/media/GhVz_ncaMAAButd?format=jpg&name=small",
   },
+  {
+    id: "https://ethereal-alto-f58.notion.site/How-to-Study-4-hours-every-day-186db9bb546c80acb25ddabf57e594aa",
+    title: "How to Study 4 hours every day",
+    image:
+      "https://i.pinimg.com/736x/8c/5e/98/8c5e988ae5c41128e4e3035bf6e7ae59.jpg",
+  },
 ];
 
 export default function BlogSection() {
