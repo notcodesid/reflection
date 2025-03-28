@@ -8,7 +8,7 @@ export default function Home() {
         <div className="reflection-container pt-8">
             <div className="my-[4rem]">
                 <section className="hidden md:block pt-[3rem] pb-[2rem]">
-                    <h1 className="md:text-7xl font-medium font-serif">How to Study 4 hours every day </h1>
+                    <h1 className="md:text-7xl font-medium font-serif">how to Study 4 hours every day </h1>
                 </section>
 
                 <section className="md:hidden">
