@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 30% 98%;
+    --foreground: 144 13% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 144 13% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 144 13% 20%;
+
+    --primary: 144 13% 20%;
+    --primary-foreground: 60 30% 98%;
+
+    --secondary: 144 3% 66%;
+    --secondary-foreground: 144 13% 20%;
+
+    --muted: 144 3% 66%;
+    --muted-foreground: 144 5% 45%;
+
+    --accent: 144 3% 66%;
+    --accent-foreground: 144 13% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 30% 98%;
+
+    --border: 144 3% 85%;
+    --input: 144 3% 85%;
+    --ring: 144 13% 20%;
+
+    --radius: 0.5rem;
+
+    --font-sans: 'IBM Plex Mono', monospace;
+    --font-serif: 'EB Garamond', serif;
+  }
+
+  .dark {
+    --background: 144 13% 20%;
+    --foreground: 60 30% 98%;
+
+    --card: 144 13% 18%;
+    --card-foreground: 60 30% 96%;
+
+    --popover: 144 13% 18%;
+    --popover-foreground: 60 30% 96%;
+
+    --primary: 60 30% 96%;
+    --primary-foreground: 144 13% 20%;
+
+    --secondary: 144 5% 26%;
+    --secondary-foreground: 60 30% 96%;
+
+    --muted: 144 5% 26%;
+    --muted-foreground: 144 3% 66%;
+
+    --accent: 144 5% 26%;
+    --accent-foreground: 60 30% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 30% 96%;
+
+    --border: 144 5% 26%;
+    --input: 144 5% 26%;
+    --ring: 60 30% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Import the fonts from same-assets.com */
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('https://ext.same-assets.com/80099309/3729947534.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('https://ext.same-assets.com/80099309/1609324698.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('https://ext.same-assets.com/80099309/3284972476.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.reflection-container {
+  @apply container max-w-4xl mx-auto px-4 md:px-6;
+}
+
+.section-divider {
+  @apply w-full h-px bg-border my-8;
+}
+
+.link-hover {
+  @apply hover:text-primary/80 transition-colors;
+}
+
+/* Add custom styling for the research papers grid */
+.papers-grid {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-4 mt-8;
+}
+
+.paper-item {
+  @apply flex flex-col items-center text-center;
+}
+
+.paper-item img {
+  @apply w-full h-auto mb-2 border border-border;
+}
+
+.paper-item h3 {
+  @apply text-base font-serif mb-0;
+}
+
+.paper-item span {
+  @apply text-sm text-muted-foreground;
+}
