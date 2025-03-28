@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 import { Layout } from "@/components/layout/Layout";
 import ClientBody from "./ClientBody";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "siddharth / reflection",
@@ -30,11 +31,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <ClientBody>
+        <Providers>
         <Layout>
           {children}
         </Layout>
+        </Providers>
       </ClientBody>
     </html>
   );
