@@ -6,17 +6,17 @@ import ClientBody from "./ClientBody";
 export const metadata: Metadata = {
   title: "siddharth / reflection",
   description: "thoughts on life, tech, and growth.",
-  metadataBase: new URL("https://reflection.siddharthkrishna.com"),
+  metadataBase: new URL("https://awakenings-one.vercel.app/"),
   openGraph: {
     title: "siddharth / reflection",
     description: "thoughts on life, tech, and growth.",
-    url: "https://reflection.siddharthkrishna.com/",
+    url: "https://awakenings-one.vercel.app/",
     siteName: "reflection",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph.png",
         width: 1200,
         height: 630,
         alt: "reflection",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     creator: "@notcodesid",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph.png",
         width: 1200,
         height: 630,
         alt: "reflection",

@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --turbopack",
-    "generate-og": "node scripts/generate-og-image.js",
-    "build": "npm run generate-og && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
