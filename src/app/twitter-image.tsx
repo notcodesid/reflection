@@ -19,7 +19,8 @@ export default async function Image() {
       <div
         style={{
           fontSize: 88,
-          background: 'white',
+          background: 'hsl(60 30% 98%)', // Using the --background color from CSS
+          color: 'hsl(144 13% 20%)', // Using the --foreground color from CSS
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -32,30 +33,30 @@ export default async function Image() {
         <div style={{ 
           display: 'flex', 
           alignItems: 'center',
-          marginBottom: '40px'
         }}>
           <div
             style={{
-              width: '36px', 
-              height: '36px', 
+              width: '48px', 
+              height: '48px', 
               borderRadius: '50%', 
-              border: '2px solid black',
+              border: '2px solid hsl(144 13% 20%)', // Using the --primary color
               background: 'transparent', 
               marginRight: '10px',
             }}
           />
           <div
             style={{
-              width: '36px', 
-              height: '36px', 
+              width: '48px', 
+              height: '48px', 
               borderRadius: '50%', 
-              background: 'black',
+              background: 'hsl(144 13% 20%)', // Using the --primary color
             }}
           />
           <span style={{ 
             marginLeft: '20px', 
             fontFamily: 'serif',
             fontWeight: '500',
+            fontSize: '72px',
           }}>
             reflection
           </span>
