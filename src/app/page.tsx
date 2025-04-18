@@ -41,6 +41,12 @@ export default function Home() {
               </h2>
             </Link>
 
+            <Link href="/vscode">
+              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
+              <span className=" ml-5">transition from cursor to vscode </span>
+              </h2>
+            </Link>
+
             
           </div>
         </div>
