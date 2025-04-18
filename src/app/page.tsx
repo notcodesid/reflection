@@ -41,12 +41,6 @@ export default function Home() {
               </h2>
             </Link>
 
-            <Link href="/cp">
-              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
-              <span className=" ml-5">why i&apos;m obsessed with competitive programming</span>
-              </h2>
-            </Link>
-
             
           </div>
         </div>
