@@ -1,4 +1,6 @@
 import { Footer } from "@/components/layout/Footer";
+import Image from "next/image";
+import nyc from "../../../public/nyc.png";
 
 export default function Home() {
     return (
@@ -46,6 +48,8 @@ export default function Home() {
                 <p className="text-lg md:text-xl font-serif mt-4">
                     laptop open. nyc morning up on the screen like it knows i&apos;m dreaming of something bigger. the best view after i woke up. it&apos;s a reminder to move to nyc.
                 </p>
+
+                <Image src={nyc} alt="nyc" className="w-full rounded-lg mt-5" width={500} height={500} />
                 
                 <p className="text-lg md:text-xl font-serif mt-4">
                     next up: the main questline.
