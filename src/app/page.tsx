@@ -17,6 +17,30 @@ export default function Home() {
 
             {/* <h2 className="text-2xl font-bold">growth</h2> */}
 
+            <Link href="/day">
+              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
+              <span className=" ml-5">a day of 20 years old</span>
+              </h2>
+            </Link>
+
+            <Link href="/vscode">
+              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
+              <span className=" ml-5">transition from cursor to vscode </span>
+              </h2>
+            </Link>
+
+            <Link href="/hire">
+              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
+              <span className=" ml-5">how to get hire - sam altman</span>
+              </h2>
+            </Link>
+
+            <Link href="/serverless">
+              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
+              <span className=" ml-5">serverless backend</span>
+              </h2>
+            </Link>
+
             <Link href="/study">
               <h2 className="flex items-center gap-2"> <ArrowIcon /> 
               <span className=" ml-5">how to study 4 hours every day</span>
@@ -27,27 +51,7 @@ export default function Home() {
               <h2 className="flex items-center gap-2"> <ArrowIcon /> 
               <span className=" ml-5">generalists in the information age</span>
               </h2>
-            </Link>
-
-            <Link href="/serverless">
-              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
-              <span className=" ml-5">serverless backend</span>
-              </h2>
-            </Link>
-
-            <Link href="/hire">
-              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
-              <span className=" ml-5">how to get hire - sam altman</span>
-              </h2>
-            </Link>
-
-            <Link href="/vscode">
-              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
-              <span className=" ml-5">transition from cursor to vscode </span>
-              </h2>
-            </Link>
-
-            
+            </Link> 
           </div>
         </div>
     );
