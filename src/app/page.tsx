@@ -17,6 +17,13 @@ export default function Home() {
 
             {/* <h2 className="text-2xl font-bold">growth</h2> */}
 
+            <Link href="/my-journal">
+              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
+              <span className=" ml-5">my journal</span>
+              </h2>
+            </Link>
+
+
             <Link href="/day">
               <h2 className="flex items-center gap-2"> <ArrowIcon /> 
               <span className=" ml-5">a day of 20 years old</span>
