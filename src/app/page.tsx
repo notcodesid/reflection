@@ -42,12 +42,6 @@ export default function Home() {
               </h2>
             </Link>
 
-            <Link href="/serverless">
-              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
-              <span className=" ml-5">serverless backend</span>
-              </h2>
-            </Link>
-
             <Link href="/study">
               <h2 className="flex items-center gap-2"> <ArrowIcon /> 
               <span className=" ml-5">how to study 4 hours every day</span>
