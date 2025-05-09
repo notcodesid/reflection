@@ -17,6 +17,12 @@ export default function Home() {
 
             {/* <h2 className="text-2xl font-bold">growth</h2> */}
 
+            <Link href="/code">
+              <h2 className="flex items-center gap-2"> <ArrowIcon /> 
+              <span className=" ml-5">can you really code?</span>
+              </h2>
+            </Link>
+
             <Link href="/my-journal">
               <h2 className="flex items-center gap-2"> <ArrowIcon /> 
               <span className=" ml-5">my journal</span>
