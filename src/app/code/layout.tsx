@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "are you really learning to code? | reflection",
-  description: "on the balance between ai tools and genuine learning",
+  title: "  can you really code ? | reflection",
+  description: "on the balance between ai tools and learning",
   metadataBase: new URL("https://blog.notcodesid.xyz"),
   openGraph: {
-    title: "are you really learning to code? | reflection",
-    description: "on the balance between ai tools and genuine learning",
+    title: "  can you really code ? | reflection",
+    description: "on the balance between ai tools and learning",
     url: "https://blog.notcodesid.xyz/code",
     siteName: "reflection",
     images: [
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "are you really learning to code? | reflection",
-    description: "on the balance between ai tools and genuine learning",
+    title: "  can you really code ? | reflection",
+    description: "on the balance between ai tools and learning",
     images: ["/code.png"],
   },
 };

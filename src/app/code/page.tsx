@@ -23,15 +23,15 @@ export default function Home() {
                 </section>
 
                 <section className="mb-8 md:hidden">
-                    <h1 className="text-4xl font-normal font-serif mb-6">are you really learning to code?</h1>
+                    <h1 className="text-4xl font-normal font-serif mb-6">can you really code ?</h1>
                 </section>
 
                 <section className="border-t border-gray-300 pt-8">
                     <p className={paragraphStyle}>
-                        on may 6, 2025, cursor dropped some pretty big news:
+                        on may 7, 2025 cursor dropped some pretty big news:
                     </p>
 
-                    <blockquote className="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Cursor is now free for students. Enjoy!</p>&mdash; Cursor (@cursor_ai) <a href="https://twitter.com/cursor_ai/status/1919846420234031146?ref_src=twsrc%5Etfw">May 6, 2025</a></blockquote>
+                    <blockquote className="twitter-tweet" data-media-max-width="500"><p lang="en" dir="ltr">Cursor is now free for students. Enjoy!</p>&mdash; Cursor (@cursor_ai) <a href="https://twitter.com/cursor_ai/status/1919846420234031146?ref_src=twsrc%5Etfw">May 7, 2025</a></blockquote>
                     <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
                     <p className={`${paragraphStyle} mt-4`}>
