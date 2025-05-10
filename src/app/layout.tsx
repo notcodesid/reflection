@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 import { Layout } from "@/components/layout/Layout";
 import ClientBody from "./ClientBody";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "siddharth / reflection",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <ClientBody>
         <Layout>
           {children}
+          <Analytics />
         </Layout>
       </ClientBody>
     </html>
