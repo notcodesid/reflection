@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     siteName: "reflection",
     images: [
       {
-        url: "/hire.png",
+        url: "/hire.png?v=1",
         width: 1200,
         height: 630,
       },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "hire me | reflection",
     description: "thoughts on how to get hired.",
-    images: ["/hire.png"],
+    images: ["/hire.png?v=1"],
   },
 };
 
