@@ -22,13 +22,19 @@ export const metadata: Metadata = {
     siteName: "reflection",
     images: [
       {
-        url: "/opengraph.png",
+        url: "/landing.png",
         width: 1200,
         height: 630,
       },
     ],
     locale: "en-IN",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "reflection",
+    description: "thoughts on life, tech, and growth.",
+    images: ["/landing.png"],
   },
 };
 
