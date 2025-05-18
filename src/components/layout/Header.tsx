@@ -21,26 +21,19 @@ export function Header() {
   };
 
   return (
-    <header className="py-4">
-      <div className="reflection-container">
-        <div className="flex justify-between items-center">
-          
-            <div className="flex items-center">
-              <div 
-                className="w-4 h-4 rounded-full border border-primary bg-transparent mr-1 cursor-pointer transition-all duration-300 hover:scale-110"
-                onClick={toggleTheme}
-                title="Light Mode"
-              ></div>
-              <div 
-                className="w-4 h-4 rounded-full bg-primary cursor-pointer transition-all duration-300 hover:scale-110"
-                onClick={toggleTheme}
-                title="Dark Mode"
-              ></div>
-              <Link href="/" className="flex items-center">
-              <span className="ml-2 text-2xl">reflection</span>
-               </Link>
-            </div>
-         
+    <header className="mb-8">
+      <div className="flex justify-between items-center">
+        <Link href="/" className="text-lg font-medium hover:underline">
+          reflection
+        </Link>
+        <div className="flex items-center space-x-2">
+          <button 
+            onClick={toggleTheme}
+            className="text-sm"
+            title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          >
+            {isDarkMode ? "light" : "dark"}
+          </button>
         </div>
       </div>
     </header>
