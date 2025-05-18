@@ -9,13 +9,11 @@ const ArrowIcon = () => (
 
 export default function Home() {
     return (
-        <div className="reflection-container pt-8 font-serif text-lg md:text-xl">
+        <div className="reflection-container pt-8 text-lg md:text-xl">
           <p className="mb-[5rem] text-7xl mt-[12rem]">thoughts on life, tech, and growth.</p>
 
           {/* blog posts */}
           <div className="flex flex-col gap-4 pt-8">
-
-            {/* <h2 className="text-2xl font-bold">growth</h2> */}
 
             <Link href="/code">
               <h2 className="flex items-center gap-2"> <ArrowIcon /> 

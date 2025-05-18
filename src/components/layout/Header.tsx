@@ -37,7 +37,7 @@ export function Header() {
                 title="Dark Mode"
               ></div>
               <Link href="/" className="flex items-center">
-              <span className="ml-2 text-2xl font-serif">reflection</span>
+              <span className="ml-2 text-2xl">reflection</span>
                </Link>
             </div>
          

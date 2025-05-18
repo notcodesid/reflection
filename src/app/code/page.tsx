@@ -2,20 +2,20 @@ import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
     // Common styles to avoid repetition
-    const paragraphStyle = "text-lg md:text-xl font-serif";
+    const paragraphStyle = "text-lg md:text-xl ";
     const paragraphSpacing = "mt-1";
     const sectionStyle = "pt-8";
-    const headingStyle = "font-serif text-2xl mb-6";
+    const headingStyle = " text-2xl mb-6";
 
     return (
         <>
             <div className="reflection-container pt-8">
                 <section className="mb-16 hidden md:block pt-[3rem] pb-[2rem]">
-                    <h1 className="md:text-7xl font-medium font-serif mb-12">
+                    <h1 className="md:text-7xl font-medium  mb-12">
                         can you really code ?
                     </h1>
 
-                    <section className="mb-4 flex items-center text-sm text-gray-500 font-sans">
+                    <section className="mb-4 flex items-center text-sm text-gray-500 ">
                         <span>2025-05-10</span>
                         <span className="mx-2">•</span>
                         <span>4 min read</span>
@@ -23,7 +23,7 @@ export default function Home() {
                 </section>
 
                 <section className="mb-8 md:hidden">
-                    <h1 className="text-4xl font-normal font-serif mb-6">can you really code ?</h1>
+                    <h1 className="text-4xl font-normal  mb-6">can you really code ?</h1>
                 </section>
 
                 <section className="border-t border-gray-300 pt-8">

@@ -60,8 +60,8 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-        serif: ["var(--font-serif)", ...fontFamily.serif],
+        sans: ["var(--font-inter)", ...fontFamily.sans],
+        serif: ["var(--font-inter)", ...fontFamily.serif],
       },
       typography: {
         DEFAULT: {
@@ -75,19 +75,19 @@ module.exports = {
             },
             h1: {
               color: 'hsl(var(--foreground))',
-              fontFamily: 'var(--font-serif)',
+              fontFamily: 'var(--font-inter)',
             },
             h2: {
               color: 'hsl(var(--foreground))',
-              fontFamily: 'var(--font-serif)',
+              fontFamily: 'var(--font-inter)',
             },
             h3: {
               color: 'hsl(var(--foreground))',
-              fontFamily: 'var(--font-serif)',
+              fontFamily: 'var(--font-inter)',
             },
             h4: {
               color: 'hsl(var(--foreground))',
-              fontFamily: 'var(--font-serif)',
+              fontFamily: 'var(--font-inter)',
             },
             blockquote: {
               color: 'hsl(var(--foreground))',
