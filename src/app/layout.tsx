@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "reflection",
     images: [
       {
-        url: "/landing.png",
+        url: "/landing.png?v=1",
         width: 1200,
         height: 630,
       },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "reflection",
     description: "thoughts on life, tech, and growth.",
-    images: ["/landing.png"],
+    images: ["/landing.png?v=1"],
   },
 };
 
