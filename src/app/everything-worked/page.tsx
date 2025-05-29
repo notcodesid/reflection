@@ -60,10 +60,10 @@ export default function Home() {
           i had two wallets:
         </p>
 
-        <p className="list-disc text-base">
-         <p> - one was the dev wallet where i wasn't supposed to sell any tokens.</p>
-         <p> - the other was the public wallet, where i could sell freely.</p>
-        </p>
+        <ul className="list-disc pl-5 my-2 text-base space-y-2">
+          <li>one was the dev wallet where i wasn't supposed to sell any tokens.</li>
+          <li>the other was the public wallet, where i could sell freely.</li>
+        </ul>
 
         <p className="text-base mt-3">
           i honestly didn't know the difference at first.
