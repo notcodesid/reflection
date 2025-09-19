@@ -2,6 +2,22 @@ import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
 
 export default function Home() {
+    const sections = [
+        [
+            { href: "/code", title: "can you really code?", desc: "thoughts on development skills" },
+            { href: "/vscode", title: "transition from cursor to vscode", desc: "developer tools" },
+        ],
+        [
+            { href: "/my-journal", title: "my journal", desc: "personal reflections" },
+            { href: "/day", title: "a day of 20 years old", desc: "reflections on youth" },
+            { href: "/study", title: "how to study 4 hours every day", desc: "productivity tips" },
+        ],
+        [
+            { href: "/hire", title: "how to get hire - sam altman", desc: "career advice" },
+            { href: "/generalists", title: "generalists in the information age", desc: "thoughts on career paths" },
+        ],
+    ];
+
     return (
         <div>
           <div className="mb-12">
@@ -12,63 +28,21 @@ export default function Home() {
             </p>
           </div>
           
-          <div>
-              <div className="flex justify-between items-baseline">
+          {sections.map((section, sectionIdx) => (
+          <div key={sectionIdx}>
+              {section.map((item, idx) => (
+              <div className={`flex justify-between items-baseline${idx > 0 ? " mt-2" : ""}`} key={item.href}>
                 <div>
-                  <Link href="/code" className="hover:underline text-blue-500">can you really code?</Link>
-                  <span className="text-sm  ml-2">thoughts on development skills</span>
+                  <Link href={item.href} className="hover:underline text-blue-500">{item.title}</Link>
+                  <span className="text-sm  ml-2">{item.desc}</span>
                 </div>
               </div>
-              
-              <div className="flex justify-between items-baseline mt-2">
-                <div>
-                  <Link href="/vscode" className="hover:underline text-blue-500">transition from cursor to vscode</Link>
-                  <span className="text-sm  ml-2">developer tools</span>
-                </div>
-              </div>
+              ))}
           </div>
-          
-          <div>
-              <div className="flex justify-between items-baseline">
-                <div>
-                  <Link href="/my-journal" className="hover:underline text-blue-500">my journal</Link>
-                  <span className="text-sm  ml-2">personal reflections</span>
-                </div>
-              </div>
-              
-              <div className="flex justify-between items-baseline mt-2">
-                <div>
-                  <Link href="/day" className="hover:underline text-blue-500">a day of 20 years old</Link>
-                  <span className="text-sm  ml-2">reflections on youth</span>
-                </div>
-              </div>
-              
-              <div className="flex justify-between items-baseline mt-2">
-                <div>
-                  <Link href="/study" className="hover:underline text-blue-500">how to study 4 hours every day</Link>
-                  <span className="text-sm  ml-2">productivity tips</span>
-                </div>
-              </div>
-          </div>
-          
-          <div>
-            
-              <div className="flex justify-between items-baseline">
-                <div>
-                  <Link href="/hire" className="hover:underline text-blue-500">how to get hire - sam altman</Link>
-                  <span className="text-sm  ml-2">career advice</span>
-                </div>
-              </div>
-              
-              <div className="flex justify-between items-baseline mt-2">
-                <div>
-                  <Link href="/generalists" className="hover:underline text-blue-500">generalists in the information age</Link>
-                  <span className="text-sm  ml-2">thoughts on career paths</span>
-                </div>
-              </div>
-          </div>
+          ))}
 
           <Footer />
         </div>
     );
 }
+
